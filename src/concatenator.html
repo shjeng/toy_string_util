@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문자열 합치기</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>문자열 합치기</h1>
+        <div class="concatenator-box">
+            <div class="input-group">
+                <div class="input-section">
+                    <div class="input-header">
+                        <label for="input1">첫 번째 문자열:</label>
+                        <button class="clear-input-btn" data-input="input1">초기화</button>
+                    </div>
+                    <textarea id="input1" class="short-textarea" placeholder="첫 번째 문자열을 입력하세요..."></textarea>
+                    <div class="case-options">
+                        <button class="case-btn small" data-input="input1" data-case="original">
+                            <span class="case-icon">✓</span>
+                            원본
+                        </button>
+                        <button class="case-btn small" data-input="input1" data-case="upper">
+                            <span class="case-icon">✓</span>
+                            대문자
+                        </button>
+                        <button class="case-btn small" data-input="input1" data-case="lower">
+                            <span class="case-icon">✓</span>
+                            소문자
+                        </button>
+                        <button class="case-btn small" data-input="input1" data-case="title">
+                            <span class="case-icon">✓</span>
+                            단어 첫글자 대문자
+                        </button>
+                    </div>
+                </div>
+                <div class="separator-section">
+                    <label for="separator">구분자:</label>
+                    <input type="text" id="separator" value="" placeholder="구분자를 입력하세요...">
+                </div>
+                <div class="input-section">
+                    <div class="input-header">
+                        <label for="input2">두 번째 문자열:</label>
+                        <button class="clear-input-btn" data-input="input2">초기화</button>
+                    </div>
+                    <textarea id="input2" class="short-textarea" placeholder="두 번째 문자열을 입력하세요..."></textarea>
+                    <div class="case-options">
+                        <button class="case-btn small" data-input="input2" data-case="original">
+                            <span class="case-icon">✓</span>
+                            원본
+                        </button>
+                        <button class="case-btn small" data-input="input2" data-case="upper">
+                            <span class="case-icon">✓</span>
+                            대문자
+                        </button>
+                        <button class="case-btn small" data-input="input2" data-case="lower">
+                            <span class="case-icon">✓</span>
+                            소문자
+                        </button>
+                        <button class="case-btn small" data-input="input2" data-case="title">
+                            <span class="case-icon">✓</span>
+                            단어 첫글자 대문자
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="combine-section">
+                <button id="combine-btn" class="combine-btn">문자열 합치기</button>
+            </div>
+            <div class="output-section">
+                <label for="output-text">결과:</label>
+                <textarea id="output-text" readonly placeholder="합쳐진 결과가 여기에 표시됩니다..."></textarea>
+            </div>
+            <div class="action-buttons">
+                <button id="copy-btn">결과 복사</button>
+                <button id="clear-btn">모두 지우기</button>
+            </div>
+        </div>
+        <a href="index.html" class="back-btn">← 메인으로 돌아가기</a>
+    </div>
+    <script src="concatenator.js"></script>
+</body>
+</html> 

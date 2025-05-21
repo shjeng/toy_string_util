@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>대소문자 변환기</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>대소문자 변환기</h1>
+        <div class="converter-box">
+            <div class="input-section">
+                <textarea id="input-text" placeholder="변환할 텍스트를 입력하세요..."></textarea>
+            </div>
+            <div class="button-group">
+                <button id="to-upper">대문자로 변환</button>
+                <button id="to-lower">소문자로 변환</button>
+                <button id="to-title">첫 글자만 대문자로</button>
+                <button id="to-sentence">문단 첫 글자만 대문자로</button>
+            </div>
+            <div class="move-buttons">
+                <button id="move-to-input" title="출력 결과를 입력창으로 이동">
+                    <span>↑</span> 결과를 입력창으로
+                </button>
+                <button id="move-to-output" title="입력 텍스트를 출력창으로 이동">
+                    <span>↓</span> 입력을 출력창으로
+                </button>
+            </div>
+            <div class="output-section">
+                <textarea id="output-text" readonly placeholder="변환된 결과가 여기에 표시됩니다..."></textarea>
+            </div>
+            <div class="action-buttons">
+                <button id="copy-btn">결과 복사</button>
+                <button id="clear-btn">모두 지우기</button>
+            </div>
+        </div>
+        <a href="index.html" class="back-btn">← 메인으로 돌아가기</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
